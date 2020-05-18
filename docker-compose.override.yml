@@ -1,0 +1,18 @@
+version: '2'
+services:
+  server:
+    environment:
+      - NPS_PUBLIC_URL=http://server.np.dumontierlab.com/
+      - VIRTUAL_HOST=server.np.dumontierlab.com
+  ldf:
+    environment:
+      - BASEURL=http://ldf.np.dumontierlab.com/
+      - VIRTUAL_HOST=ldf.np.dumontierlab.com
+  grlc:
+    environment:
+      - GRLC_SERVER_NAME=grlc.np.dumontierlab.com
+      - VIRTUAL_HOST=grlc.np.dumontierlab.com
+#  nginx:
+#    environment:
+#      - VIRTUAL_HOST=nanopubs.dumontierlab.com
+#      - VIRTUAL_PORT=7881
